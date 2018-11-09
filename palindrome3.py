@@ -15,7 +15,16 @@ def palindrome():
     else:
         print("Sorry this word isn't a palindrome :(")
 
-    re_play = input("Want to play again (y/n)? ")
+    #re_play = input("Want to play again (y/n)? ")# replaced with code below
+
+    while True: #limits input to yes or no. loops until valid input is entered.
+        
+        re_play = input("Do you want play again? y/n?")
+        
+        if re_play.lower() not in ('y', 'n', 'yes', 'no'):
+            print("please type 'y' or 'n' ")
+        else:
+            break
 
     if re_play.lower().startswith("y"):
         palindrome()
