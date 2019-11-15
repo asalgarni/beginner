@@ -2,7 +2,11 @@ print ('*****************')
 print ('**HELLO THERE!***')
 print ('*****************')
 print ('\nWelcome the the Python Palindrome Prober!\n')
+"""
+just adding multiline comments
+for testing only
 
+"""
 def palindrome():
 
     print ('''Please enter the word you would like to check
